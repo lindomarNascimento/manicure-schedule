@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import styles from '../../styles/pages/Initial.module.css'
 import Logo from '../../../public/logo.svg'
 
@@ -14,11 +16,14 @@ export default function initial() {
             </div>
 
             <div className={styles.buttons}>
-                <button className={styles.button}>Quero me Cadastrar</button>
-                <button className={styles.button}>Já sou cadastrado</button>
+                <Link href="/register">
+                    <button type="button" className={styles.button}>Quero me Cadastrar</button>
+                </Link>
+                <Link href="/home">
+                    <button type="button" className={styles.button}>Já sou cadastrado</button>
+                </Link>
             </div>
-
-
         </div>
     )
 }
+

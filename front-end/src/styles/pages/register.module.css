@@ -1,0 +1,123 @@
+.clientOrService {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    max-width: 300px;
+}
+
+.clientOrService span {
+    color: var(--white);
+    pointer-events: none;
+}
+
+.clientOrService div {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+
+    margin: 10px 0;
+}
+
+.clientOrService div input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color: transparent;
+}
+
+.clientOrService div input::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid var(--white);
+    display: inline-block;
+
+    transition: all 0.5s;
+}
+
+.clientOrService div input:checked::before {
+    background: var(--white);
+}
+
+.clientOrService div label {
+    margin-left: 20px;
+    color: var(--white);
+}
+
+.titleTypeClient {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    display: inline-block;
+    width:100%;
+
+    margin-top: 30px;
+    color: var(--white);
+}
+
+.buttonContainer {
+    width: 60px;
+    height: 26px;
+    border-radius: 15px;
+
+    border: 2px solid var(--white);
+    position: relative;
+}
+
+.buttonBall {
+    width: 18px;
+    height: 18px;
+    background: var(--white);
+    border-radius: 50%;
+
+    position:absolute;
+    top: 2px;
+    left:2px;
+
+    pointer-events: none;
+    transition: all 0.5s;
+}
+
+.titleInformationSerive {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    display: inline-block;
+    width:100%;
+
+    margin-top: 30px;
+    color: var(--white);
+}
+
+.adressContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px 20px 0;
+}
+
+.adressContainer input {
+    width: 45%;
+    margin: 0 auto;
+}
+
+.test {
+    font-size: 50px;
+}
+
+.inputForm {
+    width: 45%;
+    background: transparent;
+    border: 0;
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 10px 10px 0;
+    border-bottom: 2px solid #fff;
+    outline: none;
+}
