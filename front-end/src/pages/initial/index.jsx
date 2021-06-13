@@ -19,7 +19,7 @@ export default function initial() {
                 <Link href="/register">
                     <button type="button" className={styles.button}>Quero me Cadastrar</button>
                 </Link>
-                <Link href="/home">
+                <Link href="/login">
                     <button type="button" className={styles.button}>Já sou cadastrado</button>
                 </Link>
             </div>

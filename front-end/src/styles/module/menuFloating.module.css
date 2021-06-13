@@ -22,4 +22,10 @@
     height:auto;
 
     fill: var(--white);
+
+    transition: all 0.5s ease-in-out;
+}
+
+.icone:hover {
+    fill: var(--blue-twitter);
 }

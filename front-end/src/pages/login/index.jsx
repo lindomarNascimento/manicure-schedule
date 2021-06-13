@@ -18,7 +18,7 @@ export default function initial() {
           className={styles.inputLogin}
           onChange={(event) => setEmail(event.target.value)}
         />
-        
+
         <input
           type="text"
           placeholder="Criar uma senha"
@@ -28,9 +28,11 @@ export default function initial() {
       </form>
 
       <div className={styles.buttons}>
-        <button type="button" className={styles.button}>
-          Entrar
-        </button>
+        <Link href="/home">
+          <button type="button" className={styles.button}>
+            Entrar
+          </button>
+        </Link>
 
         <Link href="/register">
           <a type="button" className={styles.anchor}>

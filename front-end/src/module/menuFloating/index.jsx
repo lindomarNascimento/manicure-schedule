@@ -1,7 +1,9 @@
 import Link from 'next/link'
-import Home from '../../../public/home.svg'
+
+import{ AiOutlineHome } from 'react-icons/ai'
+import{ BiBookHeart } from 'react-icons/bi'
+
 import Person from '../../../public/woman.svg'
-import Diary from '../../../public/diary.svg'
 import styles from '../../styles/module/menuFloating.module.css'
 
 const MenuFloating = () => {
@@ -9,11 +11,11 @@ const MenuFloating = () => {
         <article className={styles.menu}>
             <nav className={styles.menuContainer}>
                 <Link href="/home">
-                    <Home className={styles.icone}/>
+                    <AiOutlineHome className={styles.icone}/>
                 </Link>
                
-                <Link href="/home">
-                    <Diary className={styles.icone}/>
+                <Link href="/schedule">
+                    <BiBookHeart className={styles.icone}/>
                 </Link>
 
                 <Link href="/home">
